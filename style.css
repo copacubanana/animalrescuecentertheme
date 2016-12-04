@@ -1,0 +1,474 @@
+/*
+Theme Name: Trevose Pet Rescue Center
+Author: Charlene Uban
+Author URI: http://charleneuban.com/
+Description: Trevose Pet Rescue Center is a custom theme for non-profit in Trevose, PA
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: green, white, blue, yellow, light, one-column, two-columns, right-sidebar, 
+flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, 
+post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: trevosepetrescuecenter
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+a:link,
+a:visited {
+	color: #006ec3;
+}
+
+p {
+	line-height: 1.65em;
+		margin: 0 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1em 0;
+	font-weight: normal;
+}
+
+/* General Layout */
+
+div.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	visibility: hidden;
+	clear: both;
+	height: 0;
+}
+
+/* Content Area */
+
+article.post {
+	margin-bottom: 20px;
+	display: block;
+	float: left;
+	height: auto;
+}
+
+
+
+/* header */
+
+.site-header {
+	border-bottom: .1em solid #DDD;
+	margin-bottom: 2em;
+	padding: 0;
+	height: auto;
+	background-color: #FFC;
+
+	border: 2px solid #990;
+}
+
+.site-header .logo {
+	display: block;
+	float: left;
+	border: .15em solid #DDD;
+	margin: .5em 0 0 .5em;
+	box-shadow: .2em .2em #654321;
+}
+
+.site-header h1 {
+	display: block;
+	padding-top: .75em;
+	margin-left: 25%;
+}
+
+.site-header h1 a:link,
+.site-header h1 a:visited {
+	text-decoration: none;
+	color: #990;
+	font-family: Impact;
+	font-size: 2.1em;
+	text-shadow: .05em .05em #654321;
+}
+
+.site-header h5 {
+	margin-bottom: 2em;
+	margin-left: 25%;
+	font-size: 1.5em;
+}
+
+/* footer */
+
+.site-footer {
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
+
+/* Navigation menus */
+
+.site-nav ul:before, .site-nav ul:after { 
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+.site-nav ul:after { 
+	clear: both; 
+}
+.site-nav { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+/* Site Header Menu */
+
+.site-header nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: #990;
+
+}
+
+.site-header nav ul {
+	display: block;
+	float: right;
+	width: 85%;	
+	margin: 0;
+	padding: 0;
+	background-color: #990;
+}
+
+.site-header nav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	display: block;
+	padding: 10px 18px;
+	border-left: 1px solid #BBB;
+	border-bottom: none;
+	text-decoration: none;
+	color: #EEE;
+}
+
+.site-header nav ul li a:hover {
+	background-color: #ECECEC;
+		color: #888;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+	background-color: #CC9;
+	color: #888;
+	font-weight: 900;
+}
+
+/* Footer Menu */
+
+.site-footer {
+	background-color: #990;
+	height: 9em;
+	padding-top: 2em;
+}
+
+.site-footer p {
+	text-align: center;
+	color: #DDD;
+}
+
+
+.site-footer nav ul {
+	width: 35%;
+	margin: 1em auto;
+
+}
+
+
+.site-footer nav ul li {
+	margin-right: .9em;
+	padding-right: .9em;
+	border-right: .1em dotted #BBB;
+}
+
+.site-footer nav ul li:last-child {
+	border-right: none;
+}
+
+
+.site-footer nav ul li a:link,
+.site-footer nav ul li a:visited {
+	color: #EEE;
+}
+
+/* Page Layout */
+
+article.page h2 {
+	font-size: 300%;
+}
+
+img {
+	display: block;
+	float: left;
+}
+
+a.donation {
+	height: 200px;
+	width: 400px;
+	display: block;
+	float: left;
+}
+
+button {
+	font-size: 3.5em;
+	border: .25em solid #990;
+	margin: 0;
+	padding: .25em .5em .25em .5em;
+	width: 100%;
+	height: 100%;
+	color: #444;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+button #button-text {
+	font-size: 1.07em;
+	display: block;
+	background-color: #990;
+	color: #FFF;
+	padding: 0 .25em;
+	margin: .15em auto;
+
+}
+
+/* Image Styles */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* donate */
+.donate {
+	display: block;
+}
+
+.donate article {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.donate article img {
+	display: block;
+}
+
+/* services */
+
+.services {
+	height: 15em;
+	display: block;
+
+}
+
+/* container-adopt-news */
+
+.container-adopt-news {
+	display: block;
+	width: 100%;
+	background-color: #FFC;
+	margin-top: 2em;
+	padding: 0;
+	box-sizing: border-box;
+	height: auto;
+
+	border: 2px solid #654321;
+}
+
+.adopt {
+	display: block;
+	width: 50%;
+		float: left;
+}
+
+.adopt article {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto;
+	border-right: .2em solid #990;
+	margin: 0 auto;
+}
+
+.adopt article h3 {
+	font-family: "Impact";
+	text-align: center;
+	color: #654321;
+	font-size: 2em;
+}
+
+.adopt article img.frame {
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: relative;
+	z-index: 5;
+}
+
+.adopt article img.available-pet {
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: absolute;
+	top: 4.5em;
+	left: 9em;
+}
+
+.news {
+	display: block;
+	float: left;
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.news article {
+	margin: 0 auto;
+	padding: 2em;
+}
+
+
+.news article h3 {
+	text-align: center;
+	color: green;
+}
+
+.news article p {
+}
+/* container-mission-hours */
+
+.container-mission-hours {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-top: 1em;
+	box-sizing: border-box;
+	height: auto;
+}
+
+/* mission */
+
+.mission {
+	display: block;
+	float: left;
+	width: 50%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+
+}
+
+.mission article {
+	padding: 2em;
+	background-color: #EEE;
+	border: 2px dotted #990;
+}
+
+.mission article h3 {
+	color: #990;
+	font-weight: 900;
+}
+
+
+/* location and hours */
+
+.hours {
+	display: block;
+	float: right;
+	width: 50%;
+	height: 23em;
+
+}
+
+.hours article {
+	padding: 2em 0 0 2em;
+	width: 90%;
+}
+
+.hours article h3 {
+	color: #990;
+	font-weight: 900;
+}
+
+/* Main CSS */
+
+
+/* Small Screen CSS */
+
+@media only screen and (min-width:50px) and (max-width: 500px) {
+
+	div.container {
+		padding: 0;
+		margin: 0;
+	}
+
+		/* header */
+
+	.site-header .logo {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 97%;
+	}
+
+	.site-header h1, .site-header h5 {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-header h1 a:link,
+	.site-header h1 a:visited {
+		font-size: 1.5em;
+	}
+
+	.adopt, .news, .mission, .hours {
+		width: 100%;
+	}
+
+
+
+}
+
+@media only screen and (min-width: 640px) { /* CSS */ }
+@media only screen and (min-width: 800px) { /* CSS */ }
+
+
+
+
+
+
+
+
+
